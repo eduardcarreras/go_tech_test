@@ -21,6 +21,7 @@ class Activity {
   final DateTime datetime;
 
   String getDate() {
+    if (datetime == null) return "No date";
     return DateFormat.yMMMd().add_jm().format(datetime);
   }}
 
